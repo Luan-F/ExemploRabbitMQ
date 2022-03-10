@@ -10,10 +10,10 @@ public class Receptor {
 
   public static void main(String[] argv) throws Exception {
     ConnectionFactory factory = new ConnectionFactory();
-    factory.setHost("ip-da-instancia-da-aws"); // Alterar
-    factory.setUsername("usuário-do-rabbitmq-server"); // Alterar
-    factory.setPassword("senha-do-rabbitmq-server"); // Alterar
-    factory.setVirtualHost("/");    Connection connection = factory.newConnection();
+    factory.setHost("3.87.142.108"); // Alterar
+    factory.setUsername("luan"); // Alterar
+    factory.setPassword("rabbit"); // Alterar
+    factory.setVirtualHost("/");
     Connection connection = factory.newConnection();
     Channel channel = connection.createChannel();
 
